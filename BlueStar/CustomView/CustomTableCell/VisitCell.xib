@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Quicksand_Book.otf">
+            <string>QuicksandBook-Regular</string>
+            <string>QuicksandBook-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="VisitCell" rowHeight="129" id="KGk-i7-Jjw" customClass="VisitCell" customModule="Blue_Star" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Email" translatesAutoresizingMaskIntoConstraints="NO" id="cti-69-89U">
+                        <rect key="frame" x="145" y="23" width="29" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="Ajr-TB-djg"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coolingsolutions@bluestarindia.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iq-bn-Fke" customClass="FRHyperLabel">
+                        <rect key="frame" x="8" y="93" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="00L-PF-06P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write to us at" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLz-o2-ytQ">
+                        <rect key="frame" x="8" y="62" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Moa-Xa-b2e"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3C-9U-S8c">
+                        <rect key="frame" x="8" y="93" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="304" id="B2j-3e-Y4v"/>
+                            <constraint firstAttribute="height" constant="21" id="v0Q-5m-1SX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="14"/>
+                        <state key="normal" title="coolingsolutions@bluestarindia.com">
+                            <color key="titleColor" red="0.10980392156862745" green="0.52941176470588236" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="iLz-o2-ytQ" firstAttribute="top" secondItem="cti-69-89U" secondAttribute="bottom" constant="10" id="An9-hC-GW6"/>
+                    <constraint firstAttribute="trailing" secondItem="cti-69-89U" secondAttribute="trailing" constant="146" id="DTA-wX-Uzl"/>
+                    <constraint firstItem="n3C-9U-S8c" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="L9K-lM-F6c"/>
+                    <constraint firstAttribute="trailing" secondItem="iLz-o2-ytQ" secondAttribute="trailing" constant="8" id="SrP-Wb-0Ck"/>
+                    <constraint firstItem="cti-69-89U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="VIB-U5-ORz"/>
+                    <constraint firstItem="iLz-o2-ytQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ZrH-7y-GfF"/>
+                    <constraint firstItem="cti-69-89U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="145" id="fSM-86-7lm"/>
+                    <constraint firstAttribute="trailing" secondItem="4iq-bn-Fke" secondAttribute="trailing" constant="8" id="n8u-oG-OR4"/>
+                    <constraint firstItem="4iq-bn-Fke" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="o5T-5g-6U1"/>
+                    <constraint firstItem="4iq-bn-Fke" firstAttribute="top" secondItem="iLz-o2-ytQ" secondAttribute="bottom" constant="10" id="qtY-nr-YdQ"/>
+                    <constraint firstItem="n3C-9U-S8c" firstAttribute="top" secondItem="iLz-o2-ytQ" secondAttribute="bottom" constant="10" id="zr3-LP-lVN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+            <connections>
+                <outlet property="buttonEmail" destination="n3C-9U-S8c" id="eeu-Ru-XLy"/>
+                <outlet property="imageViewIcon" destination="cti-69-89U" id="WMJ-Fp-WwO"/>
+                <outlet property="labelSubtitle" destination="4iq-bn-Fke" id="16e-80-q3D"/>
+                <outlet property="labelText" destination="iLz-o2-ytQ" id="cin-k6-LLV"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="188.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Email" width="29" height="29"/>
+    </resources>
+</document>

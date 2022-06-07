@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand_Book.otf">
+            <string>QuicksandBook-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AboutUsCell" rowHeight="102" id="KGk-i7-Jjw" customClass="AboutUsCell" customModule="Blue_Star" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="101.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cab-Hd-2Ht" customClass="FRHyperLabel">
+                        <rect key="frame" x="8" y="69" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2zR-ZE-Mbk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="17"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluestar_logo_new" translatesAutoresizingMaskIntoConstraints="NO" id="nLi-eP-Twv">
+                        <rect key="frame" x="53" y="5" width="214" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="47" id="kes-ge-8KP"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="nLi-eP-Twv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="53" id="5Nk-CY-Qrv"/>
+                    <constraint firstAttribute="trailing" secondItem="Cab-Hd-2Ht" secondAttribute="trailing" constant="8" id="KUp-UG-ZO6"/>
+                    <constraint firstAttribute="trailing" secondItem="nLi-eP-Twv" secondAttribute="trailing" constant="53" id="ZbP-iP-ogp"/>
+                    <constraint firstItem="Cab-Hd-2Ht" firstAttribute="top" secondItem="nLi-eP-Twv" secondAttribute="bottom" constant="17" id="iH7-PY-nZx"/>
+                    <constraint firstItem="Cab-Hd-2Ht" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="v8K-sP-Qrp"/>
+                    <constraint firstAttribute="bottom" secondItem="Cab-Hd-2Ht" secondAttribute="bottom" constant="11" id="zA7-8y-3V9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+            <connections>
+                <outlet property="imageViewLogo" destination="nLi-eP-Twv" id="cis-iM-I6T"/>
+                <outlet property="labelText" destination="Cab-Hd-2Ht" id="AKM-9r-Fuv"/>
+                <outlet property="topSpaceConstrain" destination="iH7-PY-nZx" id="wep-Ln-YhO"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="183"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bluestar_logo_new" width="297" height="64"/>
+    </resources>
+</document>

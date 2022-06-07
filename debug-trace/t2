@@ -1,0 +1,97 @@
+
+["mobileNumber": 9406555841, "user": {
+    addresses =     (
+                {
+            address1 = "Address 1 main";
+            address2 = "Address 2 line";
+            city = Mumbai;
+            companyName = "";
+            locality = Lm;
+            pinCode = 400000;
+            residentialConfiguration = "2 BHK";
+            state = MH;
+            subTypeCode = Residential;
+        }
+    );
+    age = "25 - 34";
+    alternatemobilenumber = "";
+    email = "t1p1@mailinator.com";
+    firstName = T1;
+    gender = Male;
+    lastName = P1;
+    registeredProductsIds = "F1200,F5800,F5500,F5900,F0800,F3100,F0100,F3500";
+    title = 0001;
+}, "authKey": LiDTnuqrpvzQxODjpuON, "platform": IOS]
+Server URL :: https://api.mizecx.com/bluestar/ccapp/userRegister
+PACKET :: {
+    authKey = LiDTnuqrpvzQxODjpuON;
+    mobileNumber = 9406555841;
+    platform = IOS;
+    user =     {
+        addresses =         (
+                        {
+                address1 = "Address 1 main";
+                address2 = "Address 2 line";
+                city = Mumbai;
+                companyName = "";
+                locality = Lm;
+                pinCode = 400000;
+                residentialConfiguration = "2 BHK";
+                state = MH;
+                subTypeCode = Residential;
+            }
+        );
+        age = "25 - 34";
+        alternatemobilenumber = "";
+        email = "t1p1@mailinator.com";
+        firstName = T1;
+        gender = Male;
+        lastName = P1;
+        registeredProductsIds = "F1200,F5800,F5500,F5900,F0800,F3100,F0100,F3500";
+        title = 0001;
+    };
+}
+2021-10-15 00:11:11.086483+0530 Blue Star[10493:691988] 6.18.0 - [Firebase/Analytics][I-ACS031006] View controller already tracked. Class, ID: RegistrationViewController, 3028307281936799979
+2021-10-15 00:11:11.089895+0530 Blue Star[10493:691988] 6.18.0 - [Firebase/Analytics][I-ACS031006] View controller already tracked. Class, ID: RegistrationViewController, 3028307281936799979
+2021-10-15 00:11:11.092585+0530 Blue Star[10493:691988] 6.18.0 - [Firebase/Analytics][I-ACS031006] View controller already tracked. Class, ID: RegistrationViewController, 3028307281936799979
+[Request]: POST https://api.mizecx.com/bluestar/ccapp/userRegister
+[Request Body]: 
+{"platform":"IOS","user":{"registeredProductsIds":"F1200,F5800,F5500,F5900,F0800,F3100,F0100,F3500","title":"0001","gender":"Male","firstName":"T1","alternatemobilenumber":"","age":"25 - 34","email":"t1p1@mailinator.com","addresses":[{"pinCode":"400000","residentialConfiguration":"2 BHK","city":"Mumbai","state":"MH","address1":"Address 1 main","companyName":"","address2":"Address 2 line","locality":"Lm","subTypeCode":"Residential"}],"lastName":"P1"},"authKey":"LiDTnuqrpvzQxODjpuON","mobileNumber":"9406555841"}
+[Response]: <NSHTTPURLResponse: 0x6000009104c0> { URL: https://api.mizecx.com/bluestar/ccapp/userRegister } { Status Code: 200, Headers {
+    "Content-Length" =     (
+        118
+    );
+    "Content-Type" =     (
+        "application/json"
+    );
+    Date =     (
+        "Thu, 14 Oct 2021 18:41:11 GMT"
+    );
+    Via =     (
+        "1.1 37877e0206d8f4df713e0dc69eb7f760.cloudfront.net (CloudFront)"
+    );
+    "x-amz-apigw-id" =     (
+        "HNf3JFhjIAMFtzA="
+    );
+    "x-amz-cf-id" =     (
+        "h_CwwrxJy_ZjEQbKPpiEOqm1JTB_6KAQH-gi20A9DsCN8kri0o6aNQ=="
+    );
+    "x-amz-cf-pop" =     (
+        "DEL51-C1"
+    );
+    "x-amzn-requestid" =     (
+        "8a9c9bcc-71a7-4675-9a45-f9829c45e0cd"
+    );
+    "x-amzn-trace-id" =     (
+        "Root=1-616879c7-69b1811617ca52680755814c;Sampled=0"
+    );
+    "x-cache" =     (
+        "Miss from cloudfront"
+    );
+} }
+[Response Body]: 
+{"authKey":"LiDTnuqrpvzQxODjpuON","status":"success","message":"Registered successfully.","customerId":"800001579162"}
+[Result]: SUCCESS
+[Timeline]: Timeline: { "Request Start Time": 655929671.072, "Initial Response Time": 655929672.013, "Request Completed Time": 655929672.015, "Serialization Completed Time": 655929672.015, "Latency": 0.941 secs, "Request Duration": 0.943 secs, "Serialization Duration": 0.000 secs, "Total Duration": 0.943 secs }
+(
+)

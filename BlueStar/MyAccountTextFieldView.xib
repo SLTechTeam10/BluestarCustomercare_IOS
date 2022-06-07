@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand_Book.otf">
+            <string>QuicksandBook-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MyAccountTextFieldView" id="iN0-l3-epB" customClass="MyAccountTextFieldView" customModule="Blue_Star" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uqa-7L-Chq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUV-Hn-kez">
+                            <rect key="frame" x="0.0" y="10" width="251" height="10"/>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="11"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KMT-ec-wTf">
+                            <rect key="frame" x="0.0" y="30" width="290" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="h7S-33-A58"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PBJ-ci-70V">
+                            <rect key="frame" x="271" y="0.0" width="51" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="xcJ-zm-JTu"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="xcJ-zm-JTu"/>
+                                </mask>
+                            </variation>
+                        </switch>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilM-Fx-jdt">
+                            <rect key="frame" x="290" y="30" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="5qd-TX-ny0"/>
+                                <constraint firstAttribute="width" constant="30" id="cyp-pj-ZrY"/>
+                                <constraint firstAttribute="height" constant="30" id="gbc-b2-UpJ"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="DownArrowFilled"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="cyp-pj-ZrY"/>
+                                </mask>
+                            </variation>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="PBJ-ci-70V" firstAttribute="top" secondItem="Uqa-7L-Chq" secondAttribute="top" id="713-uh-Wtu"/>
+                        <constraint firstAttribute="width" constant="320" id="BX8-Jf-W1M"/>
+                        <constraint firstItem="IUV-Hn-kez" firstAttribute="leading" secondItem="Uqa-7L-Chq" secondAttribute="leading" id="Bfg-cO-hhC"/>
+                        <constraint firstAttribute="bottom" secondItem="ilM-Fx-jdt" secondAttribute="bottom" id="Jbp-hM-0O5"/>
+                        <constraint firstItem="PBJ-ci-70V" firstAttribute="centerY" secondItem="IUV-Hn-kez" secondAttribute="centerY" id="K1v-EG-n0O"/>
+                        <constraint firstAttribute="height" constant="60" id="OvU-O3-Lng"/>
+                        <constraint firstAttribute="trailing" secondItem="PBJ-ci-70V" secondAttribute="trailing" id="ReH-Sa-L6e"/>
+                        <constraint firstAttribute="trailing" secondItem="ilM-Fx-jdt" secondAttribute="trailing" id="Swv-Hc-6aI"/>
+                        <constraint firstItem="ilM-Fx-jdt" firstAttribute="leading" secondItem="KMT-ec-wTf" secondAttribute="trailing" id="Twv-4Y-W3s"/>
+                        <constraint firstItem="KMT-ec-wTf" firstAttribute="top" secondItem="IUV-Hn-kez" secondAttribute="bottom" constant="10" id="VGL-RX-gsn"/>
+                        <constraint firstAttribute="bottom" secondItem="KMT-ec-wTf" secondAttribute="bottom" id="Y4i-LD-ziL"/>
+                        <constraint firstAttribute="trailing" secondItem="KMT-ec-wTf" secondAttribute="trailing" id="dcc-dh-JHm"/>
+                        <constraint firstAttribute="trailing" secondItem="ilM-Fx-jdt" secondAttribute="trailing" id="hLj-D1-XPE"/>
+                        <constraint firstItem="PBJ-ci-70V" firstAttribute="leading" secondItem="IUV-Hn-kez" secondAttribute="trailing" constant="20" id="tM5-5o-NhF"/>
+                        <constraint firstItem="KMT-ec-wTf" firstAttribute="leading" secondItem="Uqa-7L-Chq" secondAttribute="leading" id="zO2-oI-yFL"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="dcc-dh-JHm"/>
+                            <exclude reference="Swv-Hc-6aI"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Uqa-7L-Chq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SVr-xA-ZUg"/>
+                <constraint firstItem="Uqa-7L-Chq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="h8f-Zu-XJR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dropDownArrow" destination="ilM-Fx-jdt" id="3M0-fj-WF3"/>
+                <outlet property="textField" destination="KMT-ec-wTf" id="0nV-0h-r4q"/>
+                <outlet property="textFieldLabel" destination="IUV-Hn-kez" id="J4o-af-GpE"/>
+                <outlet property="textFieldSwitch" destination="PBJ-ci-70V" id="Kt6-h1-kr9"/>
+                <outlet property="textFieldView" destination="Uqa-7L-Chq" id="i1c-YX-nph"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="DownArrowFilled" width="21" height="21"/>
+    </resources>
+</document>

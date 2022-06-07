@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand_Book.otf">
+            <string>QuicksandBook-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProblemDescriptionView" customModule="Blue_Star" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="Dai-4f-wt9" customClass="ProblemDescriptionView" customModule="Blue_Star" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Vp-uY-uDO">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLI-ng-xSv">
+                            <rect key="frame" x="20" y="333" width="374" height="230"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Problem Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fo-sF-9AR">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <color key="backgroundColor" red="0.081794285059999999" green="0.65001023869999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="0RL-op-c4W"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pgj-dy-14D" customClass="IQTextView" customModule="IQKeyboardManagerSwift">
+                                    <rect key="frame" x="22" y="74" width="330" height="96"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="96" id="hlu-au-uPR"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Please enter problem description"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textView>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoL-S5-ibz">
+                                    <rect key="frame" x="96" y="188" width="70" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="70" id="uED-5c-Ohv"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="17"/>
+                                    <state key="normal" title="Cancel"/>
+                                    <connections>
+                                        <action selector="onCancelTapped:" destination="Dai-4f-wt9" eventType="touchUpInside" id="OLv-4g-4gS"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ev2-8X-2RA">
+                                    <rect key="frame" x="208" y="188" width="70" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="70" id="0qI-km-ic3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="17"/>
+                                    <state key="normal" title="OK"/>
+                                    <connections>
+                                        <action selector="onOKTapped:" destination="Dai-4f-wt9" eventType="touchUpInside" id="Hzx-kf-Juc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="8Fo-sF-9AR" firstAttribute="leading" secondItem="ZLI-ng-xSv" secondAttribute="leading" id="8Ok-lu-zmF"/>
+                                <constraint firstItem="EoL-S5-ibz" firstAttribute="top" secondItem="Pgj-dy-14D" secondAttribute="bottom" constant="18" id="Muw-cc-UMF"/>
+                                <constraint firstItem="Pgj-dy-14D" firstAttribute="top" secondItem="8Fo-sF-9AR" secondAttribute="bottom" constant="24" id="O5N-tW-QuK"/>
+                                <constraint firstItem="EoL-S5-ibz" firstAttribute="centerX" secondItem="Pgj-dy-14D" secondAttribute="centerX" multiplier="0.7" id="TLE-dT-3J5"/>
+                                <constraint firstAttribute="height" constant="230" id="Xwp-ho-eWO"/>
+                                <constraint firstAttribute="trailing" secondItem="8Fo-sF-9AR" secondAttribute="trailing" id="YUm-oi-lQK"/>
+                                <constraint firstAttribute="width" constant="374" id="azT-0k-VC2"/>
+                                <constraint firstItem="Ev2-8X-2RA" firstAttribute="top" secondItem="Pgj-dy-14D" secondAttribute="bottom" constant="18" id="lAF-fe-hTE"/>
+                                <constraint firstItem="Ev2-8X-2RA" firstAttribute="centerX" secondItem="Pgj-dy-14D" secondAttribute="centerX" multiplier="1.3" id="mdf-Yf-YYz"/>
+                                <constraint firstAttribute="trailing" secondItem="Pgj-dy-14D" secondAttribute="trailing" constant="22" id="rH5-gm-CQx"/>
+                                <constraint firstItem="Pgj-dy-14D" firstAttribute="leading" secondItem="ZLI-ng-xSv" secondAttribute="leading" constant="22" id="zS8-fc-oFS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ZLI-ng-xSv" secondAttribute="trailing" constant="20" id="BzZ-eU-HC7"/>
+                        <constraint firstItem="ZLI-ng-xSv" firstAttribute="centerX" secondItem="3Vp-uY-uDO" secondAttribute="centerX" id="Ybi-EX-fkn"/>
+                        <constraint firstItem="ZLI-ng-xSv" firstAttribute="leading" secondItem="3Vp-uY-uDO" secondAttribute="leading" constant="20" id="Yz6-qm-wCT"/>
+                        <constraint firstItem="ZLI-ng-xSv" firstAttribute="centerY" secondItem="3Vp-uY-uDO" secondAttribute="centerY" id="kZa-ML-KWg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3Vp-uY-uDO" firstAttribute="leading" secondItem="Dai-4f-wt9" secondAttribute="leading" id="0Zu-oZ-3DZ"/>
+                <constraint firstItem="3Vp-uY-uDO" firstAttribute="top" secondItem="Dai-4f-wt9" secondAttribute="top" id="E4F-hN-AJN"/>
+                <constraint firstItem="3Vp-uY-uDO" firstAttribute="trailing" secondItem="Dai-4f-wt9" secondAttribute="trailing" id="UQg-rj-pXs"/>
+                <constraint firstItem="3Vp-uY-uDO" firstAttribute="bottom" secondItem="Dai-4f-wt9" secondAttribute="bottom" id="ynd-QR-7XJ"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="ZLI-ng-xSv" id="Pee-Dj-SBZ"/>
+                <outlet property="descriptionTextview" destination="Pgj-dy-14D" id="uyF-nz-ZgE"/>
+                <outlet property="pdCancelButton" destination="EoL-S5-ibz" id="Bth-Yo-uZX"/>
+                <outlet property="pdOkButton" destination="Ev2-8X-2RA" id="hAA-Mp-Da0"/>
+            </connections>
+            <point key="canvasLocation" x="-97.101449275362327" y="170.75892857142856"/>
+        </view>
+    </objects>
+</document>

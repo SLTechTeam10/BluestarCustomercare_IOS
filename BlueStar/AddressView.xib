@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand_Book.otf">
+            <string>QuicksandBook-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="AddressView" id="iN0-l3-epB" customClass="AddressView" customModule="Blue_Star" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVV-cB-2aO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label Label Label Label Label Label Label Label Label Label " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4E-DX-Gj3">
+                            <rect key="frame" x="8" y="79.5" width="273" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="273" id="5RC-TG-jlK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label Label Label Label Label " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFD-GP-jZR">
+                            <rect key="frame" x="8" y="97.5" width="273" height="25.5"/>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="trT-9a-JAP">
+                            <rect key="frame" x="261" y="91" width="51" height="31"/>
+                        </switch>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhr-B8-gCN">
+                            <rect key="frame" x="285" y="6" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="n4e-X3-SaF"/>
+                                <constraint firstAttribute="width" constant="25" id="nv0-Lg-1Bx"/>
+                            </constraints>
+                            <state key="normal" image="DeleteEnabled"/>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUj-Pk-1oA">
+                            <rect key="frame" x="255" y="6" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="Fxz-bl-9ut"/>
+                                <constraint firstAttribute="width" constant="25" id="jqA-TZ-ELa"/>
+                            </constraints>
+                            <state key="normal" image="EditEnabled"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label Label Label Label Label Label Label Label Label Label " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPN-wL-KWH">
+                            <rect key="frame" x="8" y="58" width="307" height="13.5"/>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NK-oL-pjr">
+                            <rect key="frame" x="8" y="8" width="227" height="17"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="un1-gn-cPc">
+                            <rect key="frame" x="8" y="33" width="302" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="doU-uR-MUD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.81684695510000005" green="0.81684695510000005" blue="0.81684695510000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="QPN-wL-KWH" secondAttribute="trailing" constant="5" id="2Px-bI-V8i"/>
+                        <constraint firstItem="Bhr-B8-gCN" firstAttribute="leading" secondItem="VUj-Pk-1oA" secondAttribute="trailing" constant="5" id="2Uf-Ut-Vz5"/>
+                        <constraint firstItem="0NK-oL-pjr" firstAttribute="leading" secondItem="rVV-cB-2aO" secondAttribute="leading" constant="8" id="2ad-bL-AOX"/>
+                        <constraint firstItem="hFD-GP-jZR" firstAttribute="top" secondItem="f4E-DX-Gj3" secondAttribute="bottom" constant="4" id="4wT-qh-RF8"/>
+                        <constraint firstItem="VUj-Pk-1oA" firstAttribute="top" secondItem="rVV-cB-2aO" secondAttribute="top" constant="6" id="8sX-Jk-PCb"/>
+                        <constraint firstItem="hFD-GP-jZR" firstAttribute="leading" secondItem="rVV-cB-2aO" secondAttribute="leading" constant="8" id="AA4-Zo-WS2"/>
+                        <constraint firstAttribute="bottom" secondItem="hFD-GP-jZR" secondAttribute="bottom" constant="5" id="EJK-O2-bAm"/>
+                        <constraint firstItem="VUj-Pk-1oA" firstAttribute="leading" secondItem="0NK-oL-pjr" secondAttribute="trailing" constant="20" id="FMG-yf-mha"/>
+                        <constraint firstItem="trT-9a-JAP" firstAttribute="leading" secondItem="hFD-GP-jZR" secondAttribute="trailing" constant="-20" id="HNe-9I-h7N"/>
+                        <constraint firstAttribute="trailing" secondItem="trT-9a-JAP" secondAttribute="trailing" constant="10" id="HpJ-qC-FlY"/>
+                        <constraint firstItem="trT-9a-JAP" firstAttribute="leading" secondItem="f4E-DX-Gj3" secondAttribute="trailing" constant="-20" id="MSR-R3-BNT"/>
+                        <constraint firstItem="un1-gn-cPc" firstAttribute="leading" secondItem="rVV-cB-2aO" secondAttribute="leading" constant="8" id="NeG-hv-nlN"/>
+                        <constraint firstItem="QPN-wL-KWH" firstAttribute="leading" secondItem="rVV-cB-2aO" secondAttribute="leading" constant="8" id="Rp3-7E-x6J"/>
+                        <constraint firstItem="0NK-oL-pjr" firstAttribute="top" secondItem="rVV-cB-2aO" secondAttribute="top" constant="8" id="TWn-yt-zN5"/>
+                        <constraint firstAttribute="trailing" secondItem="Bhr-B8-gCN" secondAttribute="trailing" constant="10" id="VlY-5t-xqf"/>
+                        <constraint firstItem="Bhr-B8-gCN" firstAttribute="top" secondItem="rVV-cB-2aO" secondAttribute="top" constant="6" id="Vpn-Bn-DPe"/>
+                        <constraint firstItem="f4E-DX-Gj3" firstAttribute="leading" secondItem="rVV-cB-2aO" secondAttribute="leading" constant="8" id="crM-d0-NCc"/>
+                        <constraint firstAttribute="bottom" secondItem="trT-9a-JAP" secondAttribute="bottom" constant="6" id="eo8-Mz-cJH"/>
+                        <constraint firstAttribute="trailing" secondItem="f4E-DX-Gj3" secondAttribute="trailing" constant="10" id="kW8-nd-YRr"/>
+                        <constraint firstItem="un1-gn-cPc" firstAttribute="top" secondItem="Bhr-B8-gCN" secondAttribute="bottom" constant="2" id="rbp-5V-LL2"/>
+                        <constraint firstAttribute="trailing" secondItem="hFD-GP-jZR" secondAttribute="trailing" constant="10" id="sP4-Mm-WyC"/>
+                        <constraint firstItem="f4E-DX-Gj3" firstAttribute="top" secondItem="QPN-wL-KWH" secondAttribute="bottom" constant="8" id="tm4-eJ-2Hh"/>
+                        <constraint firstAttribute="trailing" secondItem="un1-gn-cPc" secondAttribute="trailing" constant="10" id="vDs-AZ-HdV"/>
+                        <constraint firstItem="QPN-wL-KWH" firstAttribute="top" secondItem="un1-gn-cPc" secondAttribute="bottom" constant="5" id="vwu-Sl-rif"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="kW8-nd-YRr"/>
+                            <exclude reference="sP4-Mm-WyC"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rVV-cB-2aO" secondAttribute="bottom" id="6Ff-6L-jVi"/>
+                <constraint firstAttribute="trailing" secondItem="rVV-cB-2aO" secondAttribute="trailing" id="6qU-Zu-POb"/>
+                <constraint firstItem="rVV-cB-2aO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="T7V-HP-eEC"/>
+                <constraint firstItem="rVV-cB-2aO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gch-6V-GnM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressLine1Label" destination="QPN-wL-KWH" id="Q96-m4-QPN"/>
+                <outlet property="addressLine2Label" destination="f4E-DX-Gj3" id="iKk-j3-Yri"/>
+                <outlet property="addressLine3Label" destination="hFD-GP-jZR" id="5Y1-mX-sRk"/>
+                <outlet property="contentView" destination="rVV-cB-2aO" id="shR-8Y-n53"/>
+                <outlet property="customerID" destination="0NK-oL-pjr" id="OVm-NJ-0ev"/>
+                <outlet property="deleteButton" destination="Bhr-B8-gCN" id="HFe-hG-fXj"/>
+                <outlet property="editButton" destination="VUj-Pk-1oA" id="YjJ-7S-vOs"/>
+                <outlet property="enableSwitch" destination="trT-9a-JAP" id="nae-Fg-XQ3"/>
+                <outlet property="resConfigHeightConstraint" destination="doU-uR-MUD" id="GRO-pI-EQJ"/>
+                <outlet property="resConfigLabel" destination="un1-gn-cPc" id="TOx-tU-nAr"/>
+            </connections>
+            <point key="canvasLocation" x="225.59999999999999" y="84.107946026986511"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DeleteEnabled" width="17" height="17"/>
+        <image name="EditEnabled" width="17" height="17"/>
+    </resources>
+</document>

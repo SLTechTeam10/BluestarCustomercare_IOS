@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand_Book.otf">
+            <string>QuicksandBook-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductListPickerVC" customModule="Blue_Star" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonDoneSave" destination="FFP-Py-KCh" id="0PU-uK-Di7"/>
+                <outlet property="collectionView" destination="aXR-Hx-kDP" id="qWg-dT-IN8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jd-7i-jOJ">
+                    <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7j-PU-3FT">
+                            <rect key="frame" x="0.0" y="9" width="54" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="NUT-rR-Wd5"/>
+                                <constraint firstAttribute="width" constant="54" id="gwq-Hz-0EN"/>
+                            </constraints>
+                            <state key="normal" image="Back"/>
+                            <connections>
+                                <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="dXq-g2-ivb"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvl-v4-BJ8">
+                            <rect key="frame" x="82" y="13.5" width="156" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="156" id="068-0Q-lN0"/>
+                                <constraint firstAttribute="height" constant="17" id="dwW-MX-mXo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFP-Py-KCh">
+                            <rect key="frame" x="260" y="7" width="58" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="58" id="7I6-TY-nP0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="18"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="doneButtonAction:" destination="-1" eventType="touchUpInside" id="39s-NS-jwW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14117647058823529" green="0.42352941176470588" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="A7j-PU-3FT" firstAttribute="leading" secondItem="2Jd-7i-jOJ" secondAttribute="leading" id="4aE-Ry-K2j"/>
+                        <constraint firstItem="FFP-Py-KCh" firstAttribute="top" secondItem="2Jd-7i-jOJ" secondAttribute="top" constant="7" id="9Aw-pP-McE"/>
+                        <constraint firstAttribute="trailing" secondItem="FFP-Py-KCh" secondAttribute="trailing" constant="2" id="VtZ-Yc-ob8"/>
+                        <constraint firstItem="kvl-v4-BJ8" firstAttribute="centerX" secondItem="2Jd-7i-jOJ" secondAttribute="centerX" id="XWC-ez-4lf"/>
+                        <constraint firstAttribute="height" constant="44" id="Z2Q-bq-Ysq"/>
+                        <constraint firstItem="kvl-v4-BJ8" firstAttribute="centerY" secondItem="2Jd-7i-jOJ" secondAttribute="centerY" id="ZdV-M9-nqe"/>
+                        <constraint firstItem="A7j-PU-3FT" firstAttribute="centerY" secondItem="2Jd-7i-jOJ" secondAttribute="centerY" id="pGO-vq-e7L"/>
+                        <constraint firstAttribute="bottom" secondItem="FFP-Py-KCh" secondAttribute="bottom" constant="7" id="x4m-51-E8b"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="aXR-Hx-kDP">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Jpf-O5-2ai">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2Jd-7i-jOJ" firstAttribute="leading" secondItem="ahf-da-qcY" secondAttribute="leading" id="5bE-Wb-oXC"/>
+                <constraint firstItem="ahf-da-qcY" firstAttribute="trailing" secondItem="2Jd-7i-jOJ" secondAttribute="trailing" id="CdU-cf-s9I"/>
+                <constraint firstAttribute="trailing" secondItem="aXR-Hx-kDP" secondAttribute="trailing" id="ZJR-hl-mNG"/>
+                <constraint firstItem="aXR-Hx-kDP" firstAttribute="top" secondItem="2Jd-7i-jOJ" secondAttribute="bottom" id="aaO-oX-4SI"/>
+                <constraint firstAttribute="bottom" secondItem="aXR-Hx-kDP" secondAttribute="bottom" id="njp-Mh-FaO"/>
+                <constraint firstItem="aXR-Hx-kDP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qC5-jy-um5"/>
+                <constraint firstItem="2Jd-7i-jOJ" firstAttribute="top" secondItem="ahf-da-qcY" secondAttribute="top" id="tVa-xF-lj4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ahf-da-qcY"/>
+            <point key="canvasLocation" x="217" y="121"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back" width="40" height="40"/>
+    </resources>
+</document>

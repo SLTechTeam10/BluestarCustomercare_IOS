@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Quicksand_Book.otf">
+            <string>QuicksandBook-Regular</string>
+            <string>QuicksandBook-Regular</string>
+            <string>QuicksandBook-Regular</string>
+            <string>QuicksandBook-Regular</string>
+            <string>QuicksandBook-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CallCell" rowHeight="241" id="KGk-i7-Jjw" customClass="CallCell" customModule="Blue_Star" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="241"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mobile" translatesAutoresizingMaskIntoConstraints="NO" id="m0w-D4-uhk">
+                        <rect key="frame" x="145" y="15" width="30" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Ueg-tu-jP0"/>
+                            <constraint firstAttribute="height" constant="29" id="onn-9p-0Al"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5L-sL-qi6">
+                        <rect key="frame" x="8" y="54" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="h3p-LD-gUE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="India" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbc-DR-dUX">
+                        <rect key="frame" x="8" y="75" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="VFq-FR-d5n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aen-tB-6Gh">
+                        <rect key="frame" x="70" y="98" width="180" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Oc5-gg-vTP"/>
+                            <constraint firstAttribute="width" constant="180" id="eu7-8c-LOJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="14"/>
+                        <state key="normal" title="+91 124 409 4100 (North)">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="mobileNumberButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0FU-yn-FCc"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOY-cY-gYB">
+                        <rect key="frame" x="70" y="122" width="180" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="5ZK-HP-flR"/>
+                            <constraint firstAttribute="width" constant="180" id="tdz-Rt-k9N"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="14"/>
+                        <state key="normal" title="+91 33 2213 4100 (East)">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="mobileNumberButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DYL-9c-741"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4A-mL-Q3x">
+                        <rect key="frame" x="70" y="146" width="180" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="G5I-3g-9tq"/>
+                            <constraint firstAttribute="width" constant="180" id="Xih-Bo-Rgw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="14"/>
+                        <state key="normal" title="+91 22 6668 4229 (West)">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="mobileNumberButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Mrm-4Q-DwG"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0C-dc-c68">
+                        <rect key="frame" x="70" y="170" width="180" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="SLs-Tf-LHH"/>
+                            <constraint firstAttribute="width" constant="180" id="WO1-Vy-NrA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="14"/>
+                        <state key="normal" title="+91 44 4244 4100 (South)">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="mobileNumberButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jNr-hv-dz3"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UAE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eco-SU-WZz">
+                        <rect key="frame" x="8" y="198" width="304" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="I9c-ot-atp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ch-uI-pfJ">
+                        <rect key="frame" x="93" y="219" width="134" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="134" id="gtl-OT-FuC"/>
+                            <constraint firstAttribute="height" constant="18" id="iU7-PA-Rwc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="14"/>
+                        <state key="normal" title="+97144576728">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="mobileNumberButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4Mr-Qx-vOY"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="WOY-cY-gYB" firstAttribute="top" secondItem="Aen-tB-6Gh" secondAttribute="bottom" constant="6" id="1oH-fX-9D6"/>
+                    <constraint firstItem="Eco-SU-WZz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="4Dk-iC-2f4"/>
+                    <constraint firstAttribute="trailing" secondItem="Eco-SU-WZz" secondAttribute="trailing" constant="8" id="75e-bh-Fhc"/>
+                    <constraint firstItem="bbc-DR-dUX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="H4c-d3-ezh"/>
+                    <constraint firstItem="6ch-uI-pfJ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="NCJ-xu-U0J"/>
+                    <constraint firstItem="n4A-mL-Q3x" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="NU4-p1-dhR"/>
+                    <constraint firstItem="Eco-SU-WZz" firstAttribute="top" secondItem="z0C-dc-c68" secondAttribute="bottom" constant="10" id="VBF-Pc-Rki"/>
+                    <constraint firstItem="z0C-dc-c68" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Xro-hD-PsS"/>
+                    <constraint firstAttribute="trailing" secondItem="bbc-DR-dUX" secondAttribute="trailing" constant="8" id="YeZ-fv-zt2"/>
+                    <constraint firstAttribute="trailing" secondItem="H5L-sL-qi6" secondAttribute="trailing" constant="8" id="aP5-WH-aNW"/>
+                    <constraint firstItem="H5L-sL-qi6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="d8B-7W-zPY"/>
+                    <constraint firstItem="n4A-mL-Q3x" firstAttribute="top" secondItem="WOY-cY-gYB" secondAttribute="bottom" constant="6" id="gcN-Ms-9Kq"/>
+                    <constraint firstItem="bbc-DR-dUX" firstAttribute="top" secondItem="H5L-sL-qi6" secondAttribute="bottom" id="hHs-Yw-sch"/>
+                    <constraint firstItem="z0C-dc-c68" firstAttribute="top" secondItem="n4A-mL-Q3x" secondAttribute="bottom" constant="6" id="kKe-Qk-4KX"/>
+                    <constraint firstItem="H5L-sL-qi6" firstAttribute="top" secondItem="m0w-D4-uhk" secondAttribute="bottom" constant="10" id="kRp-cg-xrC"/>
+                    <constraint firstItem="m0w-D4-uhk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="mwT-JO-sSX"/>
+                    <constraint firstItem="m0w-D4-uhk" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="oIT-Ew-yP2"/>
+                    <constraint firstItem="6ch-uI-pfJ" firstAttribute="top" secondItem="Eco-SU-WZz" secondAttribute="bottom" id="qQM-Vv-hB0"/>
+                    <constraint firstItem="WOY-cY-gYB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qeA-qu-aIq"/>
+                    <constraint firstItem="Aen-tB-6Gh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="sbt-4a-Rmd"/>
+                    <constraint firstItem="Aen-tB-6Gh" firstAttribute="top" secondItem="bbc-DR-dUX" secondAttribute="bottom" constant="2" id="zPi-1V-8vn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+            <point key="canvasLocation" x="295" y="175.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Mobile" width="29" height="29"/>
+    </resources>
+</document>

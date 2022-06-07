@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand_Book.otf">
+            <string>QuicksandBook-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="registerCompanyAddressCell" rowHeight="115" id="KGk-i7-Jjw" customClass="registerCompanyAddressCell" customModule="Blue_Star" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gb-RZ-UTc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kR-1k-yWT">
+                                <rect key="frame" x="10" y="10" width="300" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="dei-8N-mgh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbV-aq-9Ig">
+                                <rect key="frame" x="10" y="35" width="300" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="y7n-Ni-4sO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kg8-Lg-Uje">
+                                <rect key="frame" x="10" y="60" width="300" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="p87-9k-O5V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaI-Of-XhP">
+                                <rect key="frame" x="10" y="85" width="300" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="O0a-UR-FyB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EbV-aq-9Ig" secondAttribute="trailing" constant="10" id="9xZ-m8-pdS"/>
+                            <constraint firstItem="kg8-Lg-Uje" firstAttribute="leading" secondItem="5gb-RZ-UTc" secondAttribute="leading" constant="10" id="RKq-2T-BhO"/>
+                            <constraint firstItem="gaI-Of-XhP" firstAttribute="leading" secondItem="5gb-RZ-UTc" secondAttribute="leading" constant="10" id="VPG-Yl-enQ"/>
+                            <constraint firstItem="kg8-Lg-Uje" firstAttribute="top" secondItem="EbV-aq-9Ig" secondAttribute="bottom" constant="10" id="eTY-o8-5ah"/>
+                            <constraint firstItem="EbV-aq-9Ig" firstAttribute="top" secondItem="0kR-1k-yWT" secondAttribute="bottom" constant="10" id="fw1-dU-LgV"/>
+                            <constraint firstItem="0kR-1k-yWT" firstAttribute="top" secondItem="5gb-RZ-UTc" secondAttribute="top" constant="10" id="hNc-x4-jPT"/>
+                            <constraint firstAttribute="trailing" secondItem="0kR-1k-yWT" secondAttribute="trailing" constant="10" id="hRL-VY-EiD"/>
+                            <constraint firstItem="0kR-1k-yWT" firstAttribute="leading" secondItem="5gb-RZ-UTc" secondAttribute="leading" constant="10" id="pDA-55-5Eh"/>
+                            <constraint firstItem="gaI-Of-XhP" firstAttribute="top" secondItem="kg8-Lg-Uje" secondAttribute="bottom" constant="10" id="rfh-38-gUe"/>
+                            <constraint firstAttribute="trailing" secondItem="gaI-Of-XhP" secondAttribute="trailing" constant="10" id="s6G-PN-gQr"/>
+                            <constraint firstItem="EbV-aq-9Ig" firstAttribute="leading" secondItem="5gb-RZ-UTc" secondAttribute="leading" constant="10" id="sRG-bl-bgE"/>
+                            <constraint firstAttribute="trailing" secondItem="kg8-Lg-Uje" secondAttribute="trailing" constant="10" id="y8k-aM-xiW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5gb-RZ-UTc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5Q6-lR-ljl"/>
+                    <constraint firstAttribute="trailing" secondItem="5gb-RZ-UTc" secondAttribute="trailing" id="7vq-UE-Bcr"/>
+                    <constraint firstAttribute="bottom" secondItem="5gb-RZ-UTc" secondAttribute="bottom" id="ZPw-Hc-6PR"/>
+                    <constraint firstItem="5gb-RZ-UTc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yoP-Dj-xu2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressBgView" destination="5gb-RZ-UTc" id="Iai-dT-QMD"/>
+                <outlet property="addressLine1Label" destination="EbV-aq-9Ig" id="sgh-iN-2FX"/>
+                <outlet property="addressLine2Label" destination="kg8-Lg-Uje" id="hG7-Jn-jSG"/>
+                <outlet property="addressLine3Label" destination="gaI-Of-XhP" id="maW-ec-nxB"/>
+                <outlet property="companyNameLabel" destination="0kR-1k-yWT" id="SsC-8E-wqw"/>
+            </connections>
+            <point key="canvasLocation" x="-19.199999999999999" y="88.605697151424295"/>
+        </tableViewCell>
+    </objects>
+</document>

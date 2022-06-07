@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginTextField" customModule="Blue_Star" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="LoginTextField" customModule="Blue_Star" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qbl-A0-DaL" userLabel="Text Field View">
+                    <rect key="frame" x="0.0" y="-1" width="320" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sGB-dP-iJZ">
+                            <rect key="frame" x="3" y="8" width="34" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="Xn4-oY-MMX"/>
+                                <constraint firstAttribute="width" constant="34" id="idf-UG-9rI"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mIp-h6-8lK" userLabel="Text Field">
+                            <rect key="frame" x="86" y="0.0" width="216" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="1z6-TW-g8r"/>
+                                <constraint firstAttribute="width" constant="216" id="Jwe-MV-Qf8"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kao-kP-0eW">
+                            <rect key="frame" x="38" y="0.0" width="40" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="FCP-vq-fji"/>
+                                <constraint firstAttribute="height" constant="50" id="d0N-BR-H9m"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="sGB-dP-iJZ" firstAttribute="top" secondItem="Qbl-A0-DaL" secondAttribute="top" constant="8" id="9uc-kB-gFX"/>
+                        <constraint firstItem="mIp-h6-8lK" firstAttribute="top" secondItem="Qbl-A0-DaL" secondAttribute="top" id="EhS-RC-FNt"/>
+                        <constraint firstAttribute="trailing" secondItem="mIp-h6-8lK" secondAttribute="trailing" constant="18" id="K0U-zC-vAH"/>
+                        <constraint firstItem="sGB-dP-iJZ" firstAttribute="leading" secondItem="Qbl-A0-DaL" secondAttribute="leading" constant="3" id="Lel-2I-O9r"/>
+                        <constraint firstItem="mIp-h6-8lK" firstAttribute="leading" secondItem="Kao-kP-0eW" secondAttribute="trailing" constant="8" id="ZmX-9b-HaD"/>
+                        <constraint firstAttribute="height" constant="50" id="aOU-TQ-hLN"/>
+                        <constraint firstItem="Kao-kP-0eW" firstAttribute="top" secondItem="Qbl-A0-DaL" secondAttribute="top" id="pZJ-Ud-s4d"/>
+                        <constraint firstItem="Kao-kP-0eW" firstAttribute="leading" secondItem="sGB-dP-iJZ" secondAttribute="trailing" constant="1" id="wsI-0o-bG1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qbl-A0-DaL" secondAttribute="trailing" id="MBj-br-l3M"/>
+                <constraint firstAttribute="bottom" secondItem="Qbl-A0-DaL" secondAttribute="bottom" constant="1" id="Ppr-Og-0mB"/>
+                <constraint firstItem="Qbl-A0-DaL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="l8m-Aj-uw6"/>
+                <constraint firstItem="Qbl-A0-DaL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-1" id="lJl-cC-QIV"/>
+                <constraint firstAttribute="bottom" secondItem="Kao-kP-0eW" secondAttribute="bottom" constant="1" id="yPI-UK-8QU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="label" destination="Kao-kP-0eW" id="a8s-eL-5Xh"/>
+                <outlet property="leftImageView" destination="sGB-dP-iJZ" id="rHK-Hn-Ztq"/>
+                <outlet property="textField" destination="mIp-h6-8lK" id="2Gq-nQ-naK"/>
+                <outlet property="textFieldView" destination="Qbl-A0-DaL" id="jrB-lo-NNp"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="76"/>
+        </view>
+    </objects>
+</document>

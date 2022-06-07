@@ -1,0 +1,135 @@
+Server URL :: https://api.mizecx.com/bluestar/ccapp/userRegister
+PACKET :: {
+    authKey = MrgkXfdLpfPDbPBMLqNF;
+    mobileNumber = 9406555841;
+    platform = IOS;
+    user =     {
+        addresses =         (
+                        {
+                address1 = "Address 12 main";
+                address2 = "Address 12 line";
+                city = Mumbai;
+                companyName = "";
+                locality = Lm1;
+                pinCode = 400001;
+                residentialConfiguration = "1 BHK";
+                state = MH;
+                subTypeCode = Residential;
+            },
+                        {
+                address1 = "Address 12 main";
+                address2 = "Address 12 line";
+                city = Mumbai;
+                companyName = "";
+                locality = Lm1;
+                pinCode = 400001;
+                residentialConfiguration = "1 BHK";
+                state = MH;
+                subTypeCode = Residential;
+            }
+        );
+        age = "25 - 34";
+        email = "t1p1@mailinator.com";
+        firstName = T1;
+        gender = Male;
+        lastName = P1;
+        registeredProductsIds = "F1200,F5800,F5500,F5900,F0800,F3100,F0100,F3500";
+        title = 0001;
+    };
+}
+
+[Request]: POST https://api.mizecx.com/bluestar/ccapp/userRegister
+[Request Body]: 
+{"mobileNumber":"9406555841","user":{"firstName":"T1","age":"25 - 34","gender":"Male","title":"0001","registeredProductsIds":"F1200,F5800,F5500,F5900,F0800,F3100,F0100,F3500","lastName":"P1","addresses":[{"city":"Mumbai","address2":"Address 12 line","companyName":"","address1":"Address 12 main","locality":"Lm1","subTypeCode":"Residential","pinCode":"400001","residentialConfiguration":"1 BHK","state":"MH"},{"city":"Mumbai","address2":"Address 12 line","companyName":"","address1":"Address 12 main","locality":"Lm1","subTypeCode":"Residential","pinCode":"400001","residentialConfiguration":"1 BHK","state":"MH"}],"email":"t1p1@mailinator.com"},"platform":"IOS","authKey":"MrgkXfdLpfPDbPBMLqNF"}
+[Response]: <NSHTTPURLResponse: 0x600002f607a0> { URL: https://api.mizecx.com/bluestar/ccapp/userRegister } { Status Code: 200, Headers {
+    "Content-Length" =     (
+        118
+    );
+    "Content-Type" =     (
+        "application/json"
+    );
+    Date =     (
+        "Thu, 14 Oct 2021 18:52:40 GMT"
+    );
+    Via =     (
+        "1.1 af1285e159d40db6a95c829305a00563.cloudfront.net (CloudFront)"
+    );
+    "x-amz-apigw-id" =     (
+        "HNhitGFMoAMF71g="
+    );
+    "x-amz-cf-id" =     (
+        "vc7JysmSy_bURIFE2DavaPH2TfxLWVnqSkyqQiVBnylhKbiKfuSwHg=="
+    );
+    "x-amz-cf-pop" =     (
+        "DEL51-C1"
+    );
+    "x-amzn-requestid" =     (
+        "a7510f78-383c-44f0-853b-f20029237be3"
+    );
+    "x-amzn-trace-id" =     (
+        "Root=1-61687c77-57dd8d523654e4fb57108d30;Sampled=0"
+    );
+    "x-cache" =     (
+        "Miss from cloudfront"
+    );
+} }
+[Response Body]: 
+{"authKey":"MrgkXfdLpfPDbPBMLqNF","status":"success","message":"Registered successfully.","customerId":"800001579164"}
+[Result]: SUCCESS
+[Timeline]: Timeline: { "Request Start Time": 655930359.385, "Initial Response Time": 655930360.440, "Request Completed Time": 655930360.441, "Serialization Completed Time": 655930360.442, "Latency": 1.054 secs, "Request Duration": 1.056 secs, "Serialization Duration": 0.000 secs, "Total Duration": 1.056 secs }
+2021-10-15 00:22:40.451172+0530 Blue Star[10583:698768] 6.18.0 - [Firebase/Installations][I-FIS002000] -[FIRInstallationsIDController createGetInstallationItemPromise], appName: __FIRAPP_DEFAULT
+[PlistManager] Optional({
+    alreadyRegisteredUser = 0;
+    authKey = MrgkXfdLpfPDbPBMLqNF;
+    deviceTokenRegistered = 0;
+    mobileNumber = 9406555841;
+    notificationList =     (
+    );
+    registered = 1;
+    showFeedback = 0;
+    user =     {
+        addresses =         (
+                        {
+                address1 = "Address 12 main";
+                address2 = "Address 12 line";
+                city = Mumbai;
+                companyName = "";
+                locality = Lm1;
+                pinCode = 400001;
+                residentialConfiguration = "1 BHK";
+                state = MH;
+                subTypeCode = Residential;
+            },
+                        {
+                address1 = "Address 12 main";
+                address2 = "Address 12 line";
+                city = Mumbai;
+                companyName = "";
+                locality = Lm1;
+                pinCode = 400001;
+                residentialConfiguration = "1 BHK";
+                state = MH;
+                subTypeCode = Residential;
+            },
+                        {
+                address1 = "Address 12 main";
+                address2 = "Address 12 line";
+                city = Mumbai;
+                companyName = "";
+                customerId = 800001579164;
+                locality = Lm1;
+                pinCode = 400001;
+                residentialConfiguration = "1 BHK";
+                state = MH;
+                subTypeCode = Residential;
+            }
+        );
+        age = "25 - 34";
+        email = "t1p1@mailinator.com";
+        firstName = T1;
+        gender = Male;
+        lastName = P1;
+        registeredProductsIds = "F1200,F5800,F5500,F5900,F0800,F3100,F0100,F3500";
+        title = 0001;
+    };
+})

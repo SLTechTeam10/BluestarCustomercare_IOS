@@ -1,0 +1,109 @@
+NOTICE BY Hexan Tech iOS Dev Team  :
+
+1. Since the scope of project upgrade is not approved from client, some existing runtime configuration are used to make project executable, when project received it was not executing due to some obsoleted dependencies.
+    -> As a solution for runtime build phase swift 4.0 version is configured for some Libs like "SideMenuController".
+
+2. XCode 13 version enhancement are required maximum file, build failed with "103 Syntax error as per new swift lint" with message "Initializer for conditional binding must have Optional type, not 'String'"
+    DashboardViewController.swift
+    FollowTicketModel.swift
+    cancelTicketModel.swift
+    EquipmentListModel.swift
+    NotificationHistoryModel.swift
+    AppDelegate.swift
+    Registration-I-ViewController.swift
+    PopUpViewController.swift
+    RegisterDeviceTokenModel.swift
+    MyAccountViewController.swift
+    ProductData.swift
+    RegistrationViewController.swift
+    ProductListModel.swift
+    AddAddressViewController.swift
+    RegisterUserModel.swift
+    verifyOTPModel.swift
+    TicketHistoryModel.swift
+    getAddressModel.swift
+    RegisteredDeviceViewController.swift
+    GenerateTicketModel.swift
+    GlobalAddNewAddressViewController.swift
+    RequestOTPModel.swift
+    RegisterTwoVC.swift
+    ProductBL.swift
+
+
+####
+Data in Present Problem View: {
+    customerId = 101462516;
+    equipmentId = F1405;
+    equipmentName = "DS Horizontal";
+    equipmentRegNo = 3576198;
+    indexId = 2142;
+    modelName = "Double Skin AHU Blue Star";
+    modelNo = "DHW4-600";
+    natureOfProblemDetails =     (
+    );
+    productFamilyName = "Air Handling Units";
+    productId = F1400;
+    serialNo = "EL-680";
+}
+
+###
+
+{
+    natureId = 3;
+    natureOfProblem = Others;
+    natureOfProblemImage = "http://bluestar-uat.s3.amazonaws.com/CCAPP/images/Others.png";
+}
+
+{
+    natureId = 4;
+    natureOfProblem = "Not Cooling";
+    natureOfProblemImage = "http://bluestar-uat.s3.amazonaws.com/CCAPP/images/NotCooling.png";
+}
+
+######
+
+NOPVC : product detail - Optional({
+    customerId = 101462516;
+    equipmentId = F1202;
+    equipmentName = Split;
+    equipmentRegNo = 2752269;
+    indexId = 2527;
+    modelName = "High wall Split LG";
+    modelNo = "LG-HWE-1.5";
+    natureOfProblemDetails =     (
+                {
+            natureId = 4;
+            natureOfProblem = "Not Cooling";
+            natureOfProblemImage = "http://bluestar-uat.s3.amazonaws.com/CCAPP/images/NotCooling.png";
+        },
+                {
+            natureId = 5;
+            natureOfProblem = "Noise Problem";
+            natureOfProblemImage = "http://bluestar-uat.s3.amazonaws.com/CCAPP/images/NoiseProblem.png";
+        },
+                {
+            natureId = 1;
+            natureOfProblem = "Water Leakage";
+            natureOfProblemImage = "http://bluestar-uat.s3.amazonaws.com/CCAPP/images/WaterLeakage.png";
+        },
+                {
+            natureId = 2;
+            natureOfProblem = "Remote Not Working";
+            natureOfProblemImage = "http://bluestar-uat.s3.amazonaws.com/CCAPP/images/RemoteNotWorking.png";
+        },
+                {
+            natureId = 6;
+            natureOfProblem = "Installation Request";
+            natureOfProblemImage = "http://bluestar-uat.s3.amazonaws.com/CCAPP/images/InstallationRequest.png";
+        },
+                {
+            natureId = 3;
+            natureOfProblem = Others;
+            natureOfProblemImage = "http://bluestar-uat.s3.amazonaws.com/CCAPP/images/Others.png";
+        }
+    );
+    productFamilyName = "AC - Room Air Conditioner";
+    productId = F1200;
+    productImage = "http://bluestar-uat.s3.amazonaws.com/CCAPP/images/F1200.png";
+    serialNo = PUHWE0002606;
+})

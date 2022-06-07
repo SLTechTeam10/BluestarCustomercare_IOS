@@ -1,0 +1,890 @@
+Server URL :: https://api.mizecx.com/bluestar/ccapp/requestOtp
+PACKET :: {
+    mobileNumber = 9406555841;
+    platform = IOS;
+}
+2021-10-14 22:52:57.859158+0530 Blue Star[7848:646935] 6.18.0 - [Firebase/Analytics][I-ACS031006] View controller already tracked. Class, ID: ViewController, -5864579572806235934
+2021-10-14 22:52:57.859909+0530 Blue Star[7848:646935] 6.18.0 - [Firebase/Analytics][I-ACS031006] View controller already tracked. Class, ID: ViewController, -5864579572806235934
+2021-10-14 22:52:57.860351+0530 Blue Star[7848:646935] 6.18.0 - [Firebase/Analytics][I-ACS031006] View controller already tracked. Class, ID: ViewController, -5864579572806235934
+[Request]: POST https://api.mizecx.com/bluestar/ccapp/requestOtp
+[Request Body]: 
+{"platform":"IOS","mobileNumber":"9406555841"}
+[Response]: <NSHTTPURLResponse: 0x600000a48160> { URL: https://api.mizecx.com/bluestar/ccapp/requestOtp } { Status Code: 200, Headers {
+    "Content-Length" =     (
+        103
+    );
+    "Content-Type" =     (
+        "application/json"
+    );
+    Date =     (
+        "Thu, 14 Oct 2021 17:22:58 GMT"
+    );
+    Via =     (
+        "1.1 dcd4d3d277b3e5d294f974c2692b6cf2.cloudfront.net (CloudFront)"
+    );
+    "x-amz-apigw-id" =     (
+        "HNUZ2F9aoAMF9ug="
+    );
+    "x-amz-cf-id" =     (
+        "wie8fddpEgsMmbHdarmb1esVV6dVms1P_WrVUUkQx3a0sMZlSOhR9A=="
+    );
+    "x-amz-cf-pop" =     (
+        "DEL51-C1"
+    );
+    "x-amzn-requestid" =     (
+        "224c3d45-58bf-4125-a1d4-cb14c16febeb"
+    );
+    "x-amzn-trace-id" =     (
+        "Root=1-61686772-361d342c1882af7c3b91ea21;Sampled=0"
+    );
+    "x-cache" =     (
+        "Miss from cloudfront"
+    );
+} }
+[Response Body]: 
+{"authKey":"qSfMtivgnrmoXRcAUzeP","status":"success","message":"OTP sent to your number successfully."}
+[Result]: SUCCESS
+[Timeline]: Timeline: { "Request Start Time": 655924977.838, "Initial Response Time": 655924978.505, "Request Completed Time": 655924978.510, "Serialization Completed Time": 655924978.512, "Latency": 0.667 secs, "Request Duration": 0.672 secs, "Serialization Duration": 0.002 secs, "Total Duration": 0.673 secs }
+[PlistManager] Optional({
+    alreadyRegisteredUser = 0;
+    authKey = pjFikHcmtRqieMnRNUNv;
+    deviceTokenRegistered = 0;
+    mobileNumber = 9406555841;
+    notificationList =     (
+    );
+    registered = 0;
+    showFeedback = 0;
+    user =     {
+        addresses =         (
+        );
+        alternateNoPreference = "";
+        alternatemobilenumber = "";
+        firstName = "";
+        ibaseNumber = "";
+        lastName = "";
+        mobileNumber = "";
+        pin = "";
+        platform = "";
+        preferedCallingNumber = "";
+        prefferedTimingFrom = "";
+        prefferedTimingTo = "";
+        registeredProductsIds = "";
+    };
+})
+[PlistManager] Optional({
+    alreadyRegisteredUser = 0;
+    authKey = qSfMtivgnrmoXRcAUzeP;
+    deviceTokenRegistered = 0;
+    mobileNumber = 9406555841;
+    notificationList =     (
+    );
+    registered = 0;
+    showFeedback = 0;
+    user =     {
+        addresses =         (
+        );
+        alternateNoPreference = "";
+        alternatemobilenumber = "";
+        firstName = "";
+        ibaseNumber = "";
+        lastName = "";
+        mobileNumber = "";
+        pin = "";
+        platform = "";
+        preferedCallingNumber = "";
+        prefferedTimingFrom = "";
+        prefferedTimingTo = "";
+        registeredProductsIds = "";
+    };
+})
+
+
+======================== OTP SEND
+
+Server URL :: https://api.mizecx.com/bluestar/ccapp/verifyOtp
+PACKET :: {
+    authKey = qSfMtivgnrmoXRcAUzeP;
+    mobileNumber = 9406555841;
+    otpNumber = 801721;
+    platform = IOS;
+}
+
+
+============================
+[Request]: POST https://api.mizecx.com/bluestar/ccapp/verifyOtp
+[Request Body]: 
+{"mobileNumber":"9406555841","authKey":"qSfMtivgnrmoXRcAUzeP","platform":"IOS","otpNumber":"801721"}
+[Response]: <NSHTTPURLResponse: 0x600000b97680> { URL: https://api.mizecx.com/bluestar/ccapp/verifyOtp } { Status Code: 200, Headers {
+    "Content-Length" =     (
+        90
+    );
+    "Content-Type" =     (
+        "application/json"
+    );
+    Date =     (
+        "Thu, 14 Oct 2021 17:25:14 GMT"
+    );
+    Via =     (
+        "1.1 dcd4d3d277b3e5d294f974c2692b6cf2.cloudfront.net (CloudFront)"
+    );
+    "x-amz-apigw-id" =     (
+        "HNUvJGMuoAMFhgA="
+    );
+    "x-amz-cf-id" =     (
+        "0Y5NAlAA4vvKEGu7OmhSgbGViQap2Op0APxEDYAY-OZtLwaRiFIzRA=="
+    );
+    "x-amz-cf-pop" =     (
+        "DEL51-C1"
+    );
+    "x-amzn-requestid" =     (
+        "cfad7b3d-b2c6-489a-889b-178bb3c19525"
+    );
+    "x-amzn-trace-id" =     (
+        "Root=1-616867fa-4e3115a410e924b944c991d7;Sampled=0"
+    );
+    "x-cache" =     (
+        "Miss from cloudfront"
+    );
+} }
+[Response Body]: 
+{"authKey":"qSfMtivgnrmoXRcAUzeP","status":"success","message":"OTP Verify successfully."}
+[Result]: SUCCESS
+[Timeline]: Timeline: { "Request Start Time": 655925114.223, "Initial Response Time": 655925115.005, "Request Completed Time": 655925115.006, "Serialization Completed Time": 655925115.006, "Latency": 0.782 secs, "Request Duration": 0.783 secs, "Serialization Duration": 0.000 secs, "Total Duration": 0.784 secs }
+The data couldn’t be read because it isn’t in the correct format.
+["": ]
+user is not registered on the system as well as the app
+[PlistManager] Optional({
+    alreadyRegisteredUser = 0;
+    authKey = qSfMtivgnrmoXRcAUzeP;
+    deviceTokenRegistered = 0;
+    mobileNumber = 9406555841;
+    notificationList =     (
+    );
+    registered = 0;
+    showFeedback = 0;
+    user =     {
+        addresses =         (
+        );
+        alternateNoPreference = "";
+        alternatemobilenumber = "";
+        firstName = "";
+        ibaseNumber = "";
+        lastName = "";
+        mobileNumber = "";
+        pin = "";
+        platform = "";
+        preferedCallingNumber = "";
+        prefferedTimingFrom = "";
+        prefferedTimingTo = "";
+        registeredProductsIds = "";
+    };
+})
+[PlistManager] Optional({
+    alreadyRegisteredUser = 0;
+    authKey = qSfMtivgnrmoXRcAUzeP;
+    deviceTokenRegistered = 0;
+    mobileNumber = 9406555841;
+    notificationList =     (
+    );
+    registered = 0;
+    showFeedback = 0;
+    user =     {
+        addresses =         (
+        );
+        alternateNoPreference = "";
+        alternatemobilenumber = "";
+        firstName = "";
+        ibaseNumber = "";
+        lastName = "";
+        mobileNumber = "";
+        pin = "";
+        platform = "";
+        preferedCallingNumber = "";
+        prefferedTimingFrom = "";
+        prefferedTimingTo = "";
+        registeredProductsIds = "";
+    };
+})
+
+Server URL :: https://api.mizecx.com/bluestar/ccapp/productFamilyList
+PACKET :: {
+    authKey = qSfMtivgnrmoXRcAUzeP;
+    mobileNumber = 9406555841;
+    platform = IOS;
+}
+[Request]: POST https://api.mizecx.com/bluestar/ccapp/productFamilyList
+[Request Body]: 
+{"authKey":"qSfMtivgnrmoXRcAUzeP","platform":"IOS","mobileNumber":"9406555841"}
+[Response]: <NSHTTPURLResponse: 0x600000b95c00> { URL: https://api.mizecx.com/bluestar/ccapp/productFamilyList } { Status Code: 200, Headers {
+    "Content-Length" =     (
+        14548
+    );
+    "Content-Type" =     (
+        "application/json"
+    );
+    Date =     (
+        "Thu, 14 Oct 2021 17:25:15 GMT"
+    );
+    Via =     (
+        "1.1 dcd4d3d277b3e5d294f974c2692b6cf2.cloudfront.net (CloudFront)"
+    );
+    "x-amz-apigw-id" =     (
+        "HNUvVGcYIAMFTqg="
+    );
+    "x-amz-cf-id" =     (
+        "k-J5Bn4K1fX-YdB_s0LnJ9hSg96dC9eCIxfZFXRFJx2MOF31VB8cBQ=="
+    );
+    "x-amz-cf-pop" =     (
+        "DEL51-C1"
+    );
+    "x-amzn-requestid" =     (
+        "cce45241-3d90-479f-a551-cb4276bc9a85"
+    );
+    "x-amzn-trace-id" =     (
+        "Root=1-616867fb-14aa65b326a7cb324ae3668e;Sampled=0"
+    );
+    "x-cache" =     (
+        "Miss from cloudfront"
+    );
+} }
+[Response Body]: 
+{
+    "authKey":"qSfMtivgnrmoXRcAUzeP",
+    "status":"success",
+    "message":"Product Family Details fetched successfully.",
+    "products":[
+        {"productId":"F1200",
+        "productname":"AC - Room Air Conditioner",
+        "productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F1200.png",
+        "productDisplayName":"Air Conditioner",
+        "natureOfProblemDetails":[
+            {"id":"4",
+            "natureOfProblem":"Not Cooling",
+            "natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},
+            {"id":"5",
+            "natureOfProblem":"Noise Problem",
+            "natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},
+            {"id":"1",
+            "natureOfProblem":"Water Leakage",
+            "natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},
+            {"id":"2","natureOfProblem":"Remote Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/RemoteNotWorking.png"},{"id":"6","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F5800","productname":"Air Purifier","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F5800.png","productDisplayName":"Air Purifier","natureOfProblemDetails":[{"id":"4","natureOfProblem":"Not Cooling","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},{"id":"5","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"2","natureOfProblem":"Pump Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/PumpNotWorking.png"},{"id":"6","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F5900","productname":"Air Cooler","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F5900.png","productDisplayName":"Air Cooler","natureOfProblemDetails":[{"id":"5","natureOfProblem":"Giving Alarm","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/GivingAlarm.png"},{"id":"6","natureOfProblem":"Erratic Signal","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ErraticSignal.png"},{"id":"2","natureOfProblem":"Not Throwing Air","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotThrowingAir.png"},{"id":"3","natureOfProblem":"No Display","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoDisplay.png"},{"id":"4","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"1","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F5500","productname":"Water Purifier","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F5500.png","productDisplayName":"Water Purifier","natureOfProblemDetails":[{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"5","natureOfProblem":"No Water Flow","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoWaterFlow.png"},{"id":"8","natureOfProblem":"Electrical Issue - No Display, Led, Touch Panel Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ElectricalIssue-NoDisplay,Led,TouchPanelIssue.png"},{"id":"6","natureOfProblem":"No Cold Water Or Hot Water Is Dispensing","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoColdWaterOrHotWaterIsDispensing.png"},{"id":"4","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"2","natureOfProblem":"Taste / Smell Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Taste/SmellIssue.png"},{"id":"7","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F0800","productname":"Bottled Water Dispensers","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F0800.png","productDisplayName":"Water Dispenser","natureOfProblemDetails":[{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"6","natureOfProblem":"Cold Water Not Coming","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ColdWaterNotComing.png"},{"id":"4","natureOfProblem":"Normal Water Not Coming","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NormalWaterNotComing.png"},{"id":"2","natureOfProblem":"Tap Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/TapIssue.png"},{"id":"5","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F1300","productname":"Watercoolers","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F1300.png","productDisplayName":"Water Cooler","natureOfProblemDetails":[{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"4","natureOfProblem":"Cold Water Not Coming","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ColdWaterNotComing.png"},{"id":"2","natureOfProblem":"Tap Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/TapIssue.png"},{"id":"5","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F0900","productname":"Deep Freezer - Chest Freezer","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F0900.png","productDisplayName":"Deep Freezer","natureOfProblemDetails":[{"id":"4","natureOfProblem":"Cooling Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/CoolingProblem.png"},{"id":"2","natureOfProblem":"Ice Formation","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/IceFormation.png"},{"id":"3","natureOfProblem":"Door Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/DoorIssue.png"},{"id":"1","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"5","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F3100","productname":"Cold Room","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3100.png","productDisplayName":"Cold Room","natureOfProblemDetails":[{"id":"7","natureOfProblem":"Cooling Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/CoolingProblem.png"},{"id":"4","natureOfProblem":"Ice Formation","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/IceFormation.png"},{"id":"6","natureOfProblem":"Door Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/DoorIssue.png"},{"id":"2","natureOfProblem":"Unit Tripping","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/UnitTripping.png"},{"id":"5","natureOfProblem":"Heater Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/HeaterNotWorking.png"},{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F3900","productname":"VRF - Variable Refrigerent Flow","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3900.png","productDisplayName":"VRF","natureOfProblemDetails":[{"id":"3","natureOfProblem":"Not Cooling","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},{"id":"4","natureOfProblem":"Errors In Units","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ErrorsInUnits.png"},{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"5","natureOfProblem":"Equipment Tripped","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/EquipmentTripped.png"},{"id":"2","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F0100","productname":"Chiller","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F0100.png","productDisplayName":"Chiller","natureOfProblemDetails":[{"id":"5","natureOfProblem":"Chiller Tripped","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ChillerTripped.png"},{"id":"3","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"1","natureOfProblem":"Pump Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/PumpIssue.png"},{"id":"6","natureOfProblem":"Ahu Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/AhuNotWorking.png"},{"id":"4","natureOfProblem":"Cooling Tower Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/CoolingTowerNotWorking.png"},{"id":"2","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F3500","productname":"Ducted Split","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3500.png","productDisplayName":"Ducted Systems","natureOfProblemDetails":[{"id":"5","natureOfProblem":"Not Cooling","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},{"id":"4","natureOfProblem":"Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotWorking.png"},{"id":"2","natureOfProblem":"Remote Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/RemoteIssue.png"},{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"6","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F3400","productname":"Ducted Package","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3400.png","productDisplayName":"Packaged AC","natureOfProblemDetails":[{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"5","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"},{"id":"4","natureOfProblem":"Not Cooling","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},{"id":"6","natureOfProblem":"Equipment Tripped","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/EquipmentTripped.png"},{"id":"2","natureOfProblem":"Remote Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/RemoteIssue.png"}]},{"productId":"F3700","productname":"PCPA","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3700.png","productDisplayName":"PCPA","natureOfProblemDetails":[{"id":"3","natureOfProblem":"Not Cooling","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},{"id":"2","natureOfProblem":"Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotWorking.png"},{"id":"4","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"6","natureOfProblem":"Display Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/DisplayIssue.png"},{"id":"5","natureOfProblem":"Keypad Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/KeypadNotWorking.png"},{"id":"1","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F5600","productname":"Medical Refrigeration","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F5600.png","productDisplayName":"Medical Refrigeration","natureOfProblemDetails":[{"id":"2","natureOfProblem":"Not Cooling","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},{"id":"3","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"6","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"4","natureOfProblem":"No Display","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoDisplay.png"},{"id":"5","natureOfProblem":"Ice Formation","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/IceFormation.png"},{"id":"1","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]}]}
+[Result]: SUCCESS
+[Timeline]: Timeline: { "Request Start Time": 655925115.046, "Initial Response Time": 655925116.218, "Request Completed Time": 655925116.219, "Serialization Completed Time": 655925116.219, "Latency": 1.172 secs, "Request Duration": 1.173 secs, "Serialization Duration": 0.000 secs, "Total Duration": 1.174 secs }
+{
+    authKey = qSfMtivgnrmoXRcAUzeP;
+    message = "Product Family Details fetched successfully.";
+    products =     (
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 4;
+                    natureOfProblem = "Not Cooling";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png";
+                },
+                                {
+                    id = 5;
+                    natureOfProblem = "Noise Problem";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png";
+                },
+                                {
+                    id = 1;
+                    natureOfProblem = "Water Leakage";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png";
+                },
+                                {
+                    id = 2;
+                    natureOfProblem = "Remote Not Working";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/RemoteNotWorking.png";
+                },
+                                {
+                    id = 6;
+                    natureOfProblem = "Installation Request";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png";
+                },
+                                {
+                    id = 3;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                }
+            );
+            productDisplayName = "Air Conditioner";
+            productId = F1200;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F1200.png";
+            productname = "AC - Room Air Conditioner";
+        },
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 4;
+                    natureOfProblem = "Not Cooling";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png";
+                },
+                                {
+                    id = 5;
+                    natureOfProblem = "Noise Problem";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png";
+                },
+                                {
+                    id = 1;
+                    natureOfProblem = "Water Leakage";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png";
+                },
+                                {
+                    id = 2;
+                    natureOfProblem = "Pump Not Working";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/PumpNotWorking.png";
+                },
+                                {
+                    id = 6;
+                    natureOfProblem = "Installation Request";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png";
+                },
+                                {
+                    id = 3;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                }
+            );
+            productDisplayName = "Air Purifier";
+            productId = F5800;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F5800.png";
+            productname = "Air Purifier";
+        },
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 5;
+                    natureOfProblem = "Giving Alarm";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/GivingAlarm.png";
+                },
+                                {
+                    id = 6;
+                    natureOfProblem = "Erratic Signal";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ErraticSignal.png";
+                },
+                                {
+                    id = 2;
+                    natureOfProblem = "Not Throwing Air";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotThrowingAir.png";
+                },
+                                {
+                    id = 3;
+                    natureOfProblem = "No Display";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoDisplay.png";
+                },
+                                {
+                    id = 4;
+                    natureOfProblem = "Installation Request";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png";
+                },
+                                {
+                    id = 1;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                }
+            );
+            productDisplayName = "Air Cooler";
+            productId = F5900;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F5900.png";
+            productname = "Air Cooler";
+        },
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 1;
+                    natureOfProblem = "Water Leakage";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png";
+                },
+                                {
+                    id = 5;
+                    natureOfProblem = "No Water Flow";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoWaterFlow.png";
+                },
+                                {
+                    id = 8;
+                    natureOfProblem = "Electrical Issue - No Display, Led, Touch Panel Issue";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ElectricalIssue-NoDisplay,Led,TouchPanelIssue.png";
+                },
+                                {
+                    id = 6;
+                    natureOfProblem = "No Cold Water Or Hot Water Is Dispensing";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoColdWaterOrHotWaterIsDispensing.png";
+                },
+                                {
+                    id = 4;
+                    natureOfProblem = "Noise Problem";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png";
+                },
+                                {
+                    id = 2;
+                    natureOfProblem = "Taste / Smell Issue";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Taste/SmellIssue.png";
+                },
+                                {
+                    id = 7;
+                    natureOfProblem = "Installation Request";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png";
+                },
+                                {
+                    id = 3;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                }
+            );
+            productDisplayName = "Water Purifier";
+            productId = F5500;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F5500.png";
+            productname = "Water Purifier";
+        },
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 1;
+                    natureOfProblem = "Water Leakage";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png";
+                },
+                                {
+                    id = 6;
+                    natureOfProblem = "Cold Water Not Coming";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ColdWaterNotComing.png";
+                },
+                                {
+                    id = 4;
+                    natureOfProblem = "Normal Water Not Coming";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NormalWaterNotComing.png";
+                },
+                                {
+                    id = 2;
+                    natureOfProblem = "Tap Issue";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/TapIssue.png";
+                },
+                                {
+                    id = 5;
+                    natureOfProblem = "Installation Request";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png";
+                },
+                                {
+                    id = 3;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                }
+            );
+            productDisplayName = "Water Dispenser";
+            productId = F0800;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F0800.png";
+            productname = "Bottled Water Dispensers";
+        },
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 1;
+                    natureOfProblem = "Water Leakage";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png";
+                },
+                                {
+                    id = 4;
+                    natureOfProblem = "Cold Water Not Coming";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ColdWaterNotComing.png";
+                },
+                                {
+                    id = 2;
+                    natureOfProblem = "Tap Issue";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/TapIssue.png";
+                },
+                                {
+                    id = 5;
+                    natureOfProblem = "Installation Request";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png";
+                },
+                                {
+                    id = 3;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                }
+            );
+            productDisplayName = "Water Cooler";
+            productId = F1300;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F1300.png";
+            productname = Watercoolers;
+        },
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 4;
+                    natureOfProblem = "Cooling Problem";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/CoolingProblem.png";
+                },
+                                {
+                    id = 2;
+                    natureOfProblem = "Ice Formation";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/IceFormation.png";
+                },
+                                {
+                    id = 3;
+                    natureOfProblem = "Door Issue";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/DoorIssue.png";
+                },
+                                {
+                    id = 1;
+                    natureOfProblem = "Installation Request";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png";
+                },
+                                {
+                    id = 5;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                }
+            );
+            productDisplayName = "Deep Freezer";
+            productId = F0900;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F0900.png";
+            productname = "Deep Freezer - Chest Freezer";
+        },
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 7;
+                    natureOfProblem = "Cooling Problem";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/CoolingProblem.png";
+                },
+                                {
+                    id = 4;
+                    natureOfProblem = "Ice Formation";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/IceFormation.png";
+                },
+                                {
+                    id = 6;
+                    natureOfProblem = "Door Issue";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/DoorIssue.png";
+                },
+                                {
+                    id = 2;
+                    natureOfProblem = "Unit Tripping";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/UnitTripping.png";
+                },
+                                {
+                    id = 5;
+                    natureOfProblem = "Heater Not Working";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/HeaterNotWorking.png";
+                },
+                                {
+                    id = 1;
+                    natureOfProblem = "Water Leakage";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png";
+                },
+                                {
+                    id = 3;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                }
+            );
+            productDisplayName = "Cold Room";
+            productId = F3100;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3100.png";
+            productname = "Cold Room";
+        },
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 3;
+                    natureOfProblem = "Not Cooling";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png";
+                },
+                                {
+                    id = 4;
+                    natureOfProblem = "Errors In Units";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ErrorsInUnits.png";
+                },
+                                {
+                    id = 1;
+                    natureOfProblem = "Water Leakage";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png";
+                },
+                                {
+                    id = 5;
+                    natureOfProblem = "Equipment Tripped";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/EquipmentTripped.png";
+                },
+                                {
+                    id = 2;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                }
+            );
+            productDisplayName = VRF;
+            productId = F3900;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3900.png";
+            productname = "VRF - Variable Refrigerent Flow";
+        },
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 5;
+                    natureOfProblem = "Chiller Tripped";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ChillerTripped.png";
+                },
+                                {
+                    id = 3;
+                    natureOfProblem = "Noise Problem";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png";
+                },
+                                {
+                    id = 1;
+                    natureOfProblem = "Pump Issue";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/PumpIssue.png";
+                },
+                                {
+                    id = 6;
+                    natureOfProblem = "Ahu Not Working";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/AhuNotWorking.png";
+                },
+                                {
+                    id = 4;
+                    natureOfProblem = "Cooling Tower Not Working";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/CoolingTowerNotWorking.png";
+                },
+                                {
+                    id = 2;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                }
+            );
+            productDisplayName = Chiller;
+            productId = F0100;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F0100.png";
+            productname = Chiller;
+        },
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 5;
+                    natureOfProblem = "Not Cooling";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png";
+                },
+                                {
+                    id = 4;
+                    natureOfProblem = "Not Working";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotWorking.png";
+                },
+                                {
+                    id = 2;
+                    natureOfProblem = "Remote Issue";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/RemoteIssue.png";
+                },
+                                {
+                    id = 1;
+                    natureOfProblem = "Water Leakage";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png";
+                },
+                                {
+                    id = 6;
+                    natureOfProblem = "Noise Problem";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png";
+                },
+                                {
+                    id = 3;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                }
+            );
+            productDisplayName = "Ducted Systems";
+            productId = F3500;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3500.png";
+            productname = "Ducted Split";
+        },
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 1;
+                    natureOfProblem = "Water Leakage";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png";
+                },
+                                {
+                    id = 5;
+                    natureOfProblem = "Noise Problem";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png";
+                },
+                                {
+                    id = 3;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                },
+                                {
+                    id = 4;
+                    natureOfProblem = "Not Cooling";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png";
+                },
+                                {
+                    id = 6;
+                    natureOfProblem = "Equipment Tripped";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/EquipmentTripped.png";
+                },
+                                {
+                    id = 2;
+                    natureOfProblem = "Remote Issue";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/RemoteIssue.png";
+                }
+            );
+            productDisplayName = "Packaged AC";
+            productId = F3400;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3400.png";
+            productname = "Ducted Package";
+        },
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 3;
+                    natureOfProblem = "Not Cooling";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png";
+                },
+                                {
+                    id = 2;
+                    natureOfProblem = "Not Working";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotWorking.png";
+                },
+                                {
+                    id = 4;
+                    natureOfProblem = "Noise Problem";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png";
+                },
+                                {
+                    id = 6;
+                    natureOfProblem = "Display Issue";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/DisplayIssue.png";
+                },
+                                {
+                    id = 5;
+                    natureOfProblem = "Keypad Not Working";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/KeypadNotWorking.png";
+                },
+                                {
+                    id = 1;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                }
+            );
+            productDisplayName = PCPA;
+            productId = F3700;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3700.png";
+            productname = PCPA;
+        },
+                {
+            natureOfProblemDetails =             (
+                                {
+                    id = 2;
+                    natureOfProblem = "Not Cooling";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png";
+                },
+                                {
+                    id = 3;
+                    natureOfProblem = "Noise Problem";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png";
+                },
+                                {
+                    id = 6;
+                    natureOfProblem = "Water Leakage";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png";
+                },
+                                {
+                    id = 4;
+                    natureOfProblem = "No Display";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoDisplay.png";
+                },
+                                {
+                    id = 5;
+                    natureOfProblem = "Ice Formation";
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/IceFormation.png";
+                },
+                                {
+                    id = 1;
+                    natureOfProblem = Others;
+                    natureOfProblemImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png";
+                }
+            );
+            productDisplayName = "Medical Refrigeration";
+            productId = F5600;
+            productImage = "http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F5600.png";
+            productname = "Medical Refrigeration";
+        }
+    );
+    status = success;
+}
+
+
+[PlistManager] Optional({
+    alreadyRegisteredUser = 0;
+    authKey = qSfMtivgnrmoXRcAUzeP;
+    deviceTokenRegistered = 0;
+    mobileNumber = 9406555841;
+    notificationList =     (
+    );
+    registered = 0;
+    showFeedback = 0;
+    user =     {
+        addresses =         (
+        );
+        alternateNoPreference = "";
+        alternatemobilenumber = "";
+        firstName = "";
+        ibaseNumber = "";
+        lastName = "";
+        mobileNumber = "";
+        pin = "";
+        platform = "";
+        preferedCallingNumber = "";
+        prefferedTimingFrom = "";
+        prefferedTimingTo = "";
+        registeredProductsIds = "";
+    };
+})
+
+==============
+
+Server URL :: https://api.mizecx.com/bluestar/ccapp/productFamilyList
+PACKET :: {
+    authKey = qSfMtivgnrmoXRcAUzeP;
+    mobileNumber = 9406555841;
+    platform = IOS;
+}
+
+=============
+
+[Request]: POST https://api.mizecx.com/bluestar/ccapp/productFamilyList
+[Request Body]: 
+{"mobileNumber":"9406555841","authKey":"qSfMtivgnrmoXRcAUzeP","platform":"IOS"}
+[Response]: <NSHTTPURLResponse: 0x600000a48180> { URL: https://api.mizecx.com/bluestar/ccapp/productFamilyList } { Status Code: 200, Headers {
+    "Content-Length" =     (
+        14548
+    );
+    "Content-Type" =     (
+        "application/json"
+    );
+    Date =     (
+        "Thu, 14 Oct 2021 17:25:17 GMT"
+    );
+    Via =     (
+        "1.1 dcd4d3d277b3e5d294f974c2692b6cf2.cloudfront.net (CloudFront)"
+    );
+    "x-amz-apigw-id" =     (
+        "HNUvkFT8IAMFeIA="
+    );
+    "x-amz-cf-id" =     (
+        "KnY7wxDHl5pGpGGHjIr-LRnZ1IbsHtKN5HcYLIHrixMxVKHa5Zij2w=="
+    );
+    "x-amz-cf-pop" =     (
+        "DEL51-C1"
+    );
+    "x-amzn-requestid" =     (
+        "e3e6a8fe-002a-4da9-8573-52400ac45ad9"
+    );
+    "x-amzn-trace-id" =     (
+        "Root=1-616867fd-31a708ea3d36af1f729dd6d6;Sampled=0"
+    );
+    "x-cache" =     (
+        "Miss from cloudfront"
+    );
+} }
+[Response Body]: 
+{"authKey":"qSfMtivgnrmoXRcAUzeP","status":"success","message":"Product Family Details fetched successfully.","products":[{"productId":"F1200","productname":"AC - Room Air Conditioner","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F1200.png","productDisplayName":"Air Conditioner","natureOfProblemDetails":[{"id":"4","natureOfProblem":"Not Cooling","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},{"id":"5","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"2","natureOfProblem":"Remote Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/RemoteNotWorking.png"},{"id":"6","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F5800","productname":"Air Purifier","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F5800.png","productDisplayName":"Air Purifier","natureOfProblemDetails":[{"id":"4","natureOfProblem":"Not Cooling","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},{"id":"5","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"2","natureOfProblem":"Pump Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/PumpNotWorking.png"},{"id":"6","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F5900","productname":"Air Cooler","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F5900.png","productDisplayName":"Air Cooler","natureOfProblemDetails":[{"id":"5","natureOfProblem":"Giving Alarm","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/GivingAlarm.png"},{"id":"6","natureOfProblem":"Erratic Signal","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ErraticSignal.png"},{"id":"2","natureOfProblem":"Not Throwing Air","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotThrowingAir.png"},{"id":"3","natureOfProblem":"No Display","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoDisplay.png"},{"id":"4","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"1","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F5500","productname":"Water Purifier","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F5500.png","productDisplayName":"Water Purifier","natureOfProblemDetails":[{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"5","natureOfProblem":"No Water Flow","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoWaterFlow.png"},{"id":"8","natureOfProblem":"Electrical Issue - No Display, Led, Touch Panel Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ElectricalIssue-NoDisplay,Led,TouchPanelIssue.png"},{"id":"6","natureOfProblem":"No Cold Water Or Hot Water Is Dispensing","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoColdWaterOrHotWaterIsDispensing.png"},{"id":"4","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"2","natureOfProblem":"Taste / Smell Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Taste/SmellIssue.png"},{"id":"7","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F0800","productname":"Bottled Water Dispensers","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F0800.png","productDisplayName":"Water Dispenser","natureOfProblemDetails":[{"id":"6","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"5","natureOfProblem":"Cold Water Not Coming","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ColdWaterNotComing.png"},{"id":"3","natureOfProblem":"Normal Water Not Coming","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NormalWaterNotComing.png"},{"id":"1","natureOfProblem":"Tap Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/TapIssue.png"},{"id":"4","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"2","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F1300","productname":"Watercoolers","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F1300.png","productDisplayName":"Water Cooler","natureOfProblemDetails":[{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"5","natureOfProblem":"Cold Water Not Coming","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ColdWaterNotComing.png"},{"id":"2","natureOfProblem":"Tap Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/TapIssue.png"},{"id":"4","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F0900","productname":"Deep Freezer - Chest Freezer","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F0900.png","productDisplayName":"Deep Freezer","natureOfProblemDetails":[{"id":"5","natureOfProblem":"Cooling Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/CoolingProblem.png"},{"id":"3","natureOfProblem":"Ice Formation","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/IceFormation.png"},{"id":"4","natureOfProblem":"Door Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/DoorIssue.png"},{"id":"2","natureOfProblem":"Installation Request","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/InstallationRequest.png"},{"id":"1","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F3100","productname":"Cold Room","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3100.png","productDisplayName":"Cold Room","natureOfProblemDetails":[{"id":"7","natureOfProblem":"Cooling Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/CoolingProblem.png"},{"id":"4","natureOfProblem":"Ice Formation","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/IceFormation.png"},{"id":"6","natureOfProblem":"Door Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/DoorIssue.png"},{"id":"2","natureOfProblem":"Unit Tripping","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/UnitTripping.png"},{"id":"5","natureOfProblem":"Heater Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/HeaterNotWorking.png"},{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F3900","productname":"VRF - Variable Refrigerent Flow","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3900.png","productDisplayName":"VRF","natureOfProblemDetails":[{"id":"3","natureOfProblem":"Not Cooling","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},{"id":"4","natureOfProblem":"Errors In Units","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ErrorsInUnits.png"},{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"5","natureOfProblem":"Equipment Tripped","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/EquipmentTripped.png"},{"id":"2","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F0100","productname":"Chiller","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F0100.png","productDisplayName":"Chiller","natureOfProblemDetails":[{"id":"5","natureOfProblem":"Chiller Tripped","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/ChillerTripped.png"},{"id":"3","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"1","natureOfProblem":"Pump Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/PumpIssue.png"},{"id":"6","natureOfProblem":"Ahu Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/AhuNotWorking.png"},{"id":"4","natureOfProblem":"Cooling Tower Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/CoolingTowerNotWorking.png"},{"id":"2","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F3500","productname":"Ducted Split","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3500.png","productDisplayName":"Ducted Systems","natureOfProblemDetails":[{"id":"5","natureOfProblem":"Not Cooling","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},{"id":"4","natureOfProblem":"Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotWorking.png"},{"id":"2","natureOfProblem":"Remote Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/RemoteIssue.png"},{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"6","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"3","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F3400","productname":"Ducted Package","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3400.png","productDisplayName":"Packaged AC","natureOfProblemDetails":[{"id":"6","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"4","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"2","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"},{"id":"3","natureOfProblem":"Not Cooling","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},{"id":"5","natureOfProblem":"Equipment Tripped","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/EquipmentTripped.png"},{"id":"1","natureOfProblem":"Remote Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/RemoteIssue.png"}]},{"productId":"F3700","productname":"PCPA","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F3700.png","productDisplayName":"PCPA","natureOfProblemDetails":[{"id":"3","natureOfProblem":"Not Cooling","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},{"id":"2","natureOfProblem":"Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotWorking.png"},{"id":"4","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"6","natureOfProblem":"Display Issue","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/DisplayIssue.png"},{"id":"5","natureOfProblem":"Keypad Not Working","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/KeypadNotWorking.png"},{"id":"1","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]},{"productId":"F5600","productname":"Medical Refrigeration","productImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/F5600.png","productDisplayName":"Medical Refrigeration","natureOfProblemDetails":[{"id":"3","natureOfProblem":"Not Cooling","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NotCooling.png"},{"id":"4","natureOfProblem":"Noise Problem","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoiseProblem.png"},{"id":"1","natureOfProblem":"Water Leakage","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/WaterLeakage.png"},{"id":"5","natureOfProblem":"No Display","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/NoDisplay.png"},{"id":"6","natureOfProblem":"Ice Formation","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/IceFormation.png"},{"id":"2","natureOfProblem":"Others","natureOfProblemImage":"http://bluestar-prod.s3.amazonaws.com/CCAPP/images/Others.png"}]}]}
+[Result]: SUCCESS
+[Timeline]: Timeline: { "Request Start Time": 655925116.481, "Initial Response Time": 655925117.705, "Request Completed Time": 655925117.706, "Serialization Completed Time": 655925117.707, "Latency": 1.224 secs, "Request Duration": 1.225 secs, "Serialization Duration": 0.001 secs, "Total Duration": 1.226 secs }
